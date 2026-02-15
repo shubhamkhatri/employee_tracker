@@ -10,13 +10,15 @@ import 'features/employee/domain/repositories/employee_repository.dart';
 import 'features/employee/presentation/views/employees_view.dart';
 
 class EmployeeApp extends StatelessWidget {
-  const EmployeeApp({super.key});
+  const EmployeeApp({super.key, this.repository});
+
+  final EmployeeRepository? repository;
 
   @override
   Widget build(BuildContext context) {
-    final EmployeeRepository employeeRepository = EmployeeRepositoryImpl(
-      dataSource: EmployeeLocalDataSource.instance,
-    );
+    final EmployeeRepository employeeRepository =
+        repository ??
+        EmployeeRepositoryImpl(dataSource: EmployeeLocalDataSource.instance);
 
     return MaterialApp(
       title: AppStrings.appTitle,

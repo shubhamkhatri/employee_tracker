@@ -30,9 +30,22 @@ lib/
   main.dart
 ```
 
+## Tests Included
+
+- BLoC tests for load/add/update/failure states
+- Form widget test for default country and INR label
+- Employee card rendering test
+- App shell widget test with injected fake repository
+
 ## Run
 
 ```bash
 flutter pub get
 flutter run
+```
+
+## Test
+
+```bash
+flutter test
 ```
