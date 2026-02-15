@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {
-  testWidgets('renders employee details with INR salary', (
+  testWidgets('renders employee details with Indian currency format', (
     WidgetTester tester,
   ) async {
     await tester.pumpWidget(
@@ -26,8 +26,8 @@ void main() {
     );
 
     expect(find.text('Aarav Sharma'), findsOneWidget);
-    expect(find.text('Job Title: Android Developer'), findsOneWidget);
-    expect(find.text('Country: India'), findsOneWidget);
-    expect(find.text('Salary (INR): ₹850000.00'), findsOneWidget);
+    expect(find.text('Android Developer'), findsOneWidget);
+    expect(find.text('Country: 🇮🇳 India'), findsOneWidget);
+    expect(find.text('Salary: ₹8,50,000.00'), findsOneWidget);
   });
 }

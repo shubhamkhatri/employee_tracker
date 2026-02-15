@@ -12,6 +12,7 @@ class AddEmployeeFab extends StatelessWidget {
   Widget build(BuildContext context) {
     return FloatingActionButton(
       onPressed: onPressed,
+      tooltip: 'Add employee',
       child: const Icon(Icons.add),
     );
   }

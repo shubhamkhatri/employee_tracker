@@ -54,7 +54,7 @@ class _EmployeesViewState extends State<EmployeesView> {
               onPressed: () => Navigator.of(context).pop(false),
               child: const Text('Cancel'),
             ),
-            ElevatedButton(
+            OutlinedButton(
               onPressed: () => Navigator.of(context).pop(true),
               child: const Text('Delete'),
             ),
@@ -84,18 +84,17 @@ class _EmployeesViewState extends State<EmployeesView> {
           }
         },
         builder: (BuildContext context, EmployeeState state) {
-          if (state.status == EmployeeStatus.loading) {
-            return const EmployeesLoadingView();
-          }
-
-          if (state.employees.isEmpty) {
-            return const EmployeesEmptyView();
-          }
-
-          return EmployeesListView(
-            employees: state.employees,
-            onEdit: _openEditSheet,
-            onDelete: _confirmDelete,
+          return AnimatedSwitcher(
+            duration: const Duration(milliseconds: 250),
+            child: switch (state.status) {
+              EmployeeStatus.loading => const EmployeesLoadingView(),
+              _ when state.employees.isEmpty => const EmployeesEmptyView(),
+              _ => EmployeesListView(
+                  employees: state.employees,
+                  onEdit: _openEditSheet,
+                  onDelete: _confirmDelete,
+                ),
+            },
           );
         },
       ),

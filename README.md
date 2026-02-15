@@ -37,6 +37,16 @@ lib/
 - Employee card rendering test
 - App shell widget test with injected fake repository
 
+## Implementation Details
+
+### AI Usage Transparency
+
+- **How AI was used**: AI assistance was used to speed up architecture setup, CRUD flow scaffolding, UI refactors, and test case drafting.
+- **Tools used**: Primarily code generation/editing support and iterative prompt-based refinements during implementation.
+- **Prompt style**: Short, task-focused prompts were used (for example: implement CRUD with SQLite, refactor to feature-first+BLoC, improve UI polish, add tests).
+- **Rationale**: AI was used to accelerate repetitive coding tasks and explore UI/structure iterations quickly while keeping the final design and logic decisions manually reviewed.
+- **Validation**: Final code paths, naming, architecture choices, and behavior were manually reviewed and adjusted to fit project requirements.
+
 ## Run
 
 ```bash
