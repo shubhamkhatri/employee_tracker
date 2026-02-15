@@ -1,16 +1,37 @@
-# employee_tracker
+# Employee App
 
-A new Flutter project.
+Feature-first Flutter app with employee module using BLoC and CRUD-ready UI flow.
 
-## Getting Started
+## Current Scope
 
-This project is a starting point for a Flutter application.
+- Employee domain entity and repository contract
+- Employee BLoC with load/add/update/delete events
+- In-memory repository for local development flow
+- Employee list screen with add/edit/delete interactions
+- Dedicated UI widgets for loading, empty, list, card, form, and FAB
+- Country picker integration and INR salary input labels
 
-A few resources to get you started if this is your first Flutter project:
+## Structure
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+```text
+lib/
+  core/
+    constants/
+    theme/
+    widgets/
+  features/
+    emplyee/
+      presentation/
+      application/
+      domain/
+      data/
+  app.dart
+  main.dart
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Run
+
+```bash
+flutter pub get
+flutter run
+```
