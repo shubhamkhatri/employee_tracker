@@ -1,0 +1,62 @@
+[
+  {
+    "fullName": "Aarav Sharma",
+    "jobTitle": "Android Developer",
+    "country": "India",
+    "salary": 850000
+  },
+  {
+    "fullName": "Priya Nair",
+    "jobTitle": "QA Engineer",
+    "country": "India",
+    "salary": 720000
+  },
+  {
+    "fullName": "Rohan Verma",
+    "jobTitle": "Product Manager",
+    "country": "India",
+    "salary": 1400000
+  },
+  {
+    "fullName": "Neha Kapoor",
+    "jobTitle": "UX Designer",
+    "country": "India",
+    "salary": 930000
+  },
+  {
+    "fullName": "Vikram Singh",
+    "jobTitle": "Backend Engineer",
+    "country": "India",
+    "salary": 1250000
+  },
+  {
+    "fullName": "Ananya Rao",
+    "jobTitle": "Data Analyst",
+    "country": "India",
+    "salary": 810000
+  },
+  {
+    "fullName": "Karan Mehta",
+    "jobTitle": "DevOps Engineer",
+    "country": "India",
+    "salary": 1180000
+  },
+  {
+    "fullName": "Isha Gupta",
+    "jobTitle": "HR Manager",
+    "country": "India",
+    "salary": 980000
+  },
+  {
+    "fullName": "Aditya Joshi",
+    "jobTitle": "Tech Lead",
+    "country": "India",
+    "salary": 1850000
+  },
+  {
+    "fullName": "Meera Iyer",
+    "jobTitle": "Business Analyst",
+    "country": "India",
+    "salary": 890000
+  }
+]

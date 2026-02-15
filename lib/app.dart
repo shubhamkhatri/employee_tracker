@@ -4,7 +4,8 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'core/constants/app_strings.dart';
 import 'core/theme/app_theme.dart';
 import 'features/employee/application/bloc/employee_bloc.dart';
-import 'features/employee/data/repositories/in_memory_employee_repository.dart';
+import 'features/employee/data/datasources/employee_local_datasource.dart';
+import 'features/employee/data/repositories/employee_repository_impl.dart';
 import 'features/employee/domain/repositories/employee_repository.dart';
 import 'features/employee/presentation/views/employees_view.dart';
 
@@ -13,7 +14,9 @@ class EmployeeApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final EmployeeRepository employeeRepository = InMemoryEmployeeRepository();
+    final EmployeeRepository employeeRepository = EmployeeRepositoryImpl(
+      dataSource: EmployeeLocalDataSource.instance,
+    );
 
     return MaterialApp(
       title: AppStrings.appTitle,

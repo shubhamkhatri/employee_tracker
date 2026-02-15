@@ -24,7 +24,17 @@ class EmployeeBloc extends Bloc<EmployeeEvent, EmployeeState> {
     Emitter<EmployeeState> emit,
   ) async {
     emit(state.copyWith(status: EmployeeStatus.loading, errorMessage: null));
-    await _emitEmployees(emit, failureMessage: 'Failed to load employees.');
+    try {
+      await _repository.seedDummyEmployeesIfEmpty();
+      await _emitEmployees(emit, failureMessage: 'Failed to load employees.');
+    } catch (_) {
+      emit(
+        state.copyWith(
+          status: EmployeeStatus.failure,
+          errorMessage: 'Failed to load employees.',
+        ),
+      );
+    }
   }
 
   Future<void> _onEmployeeAdded(
