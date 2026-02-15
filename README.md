@@ -59,3 +59,13 @@ flutter run
 ```bash
 flutter test
 ```
+
+## Screenshots
+
+<img width="354" height="793" alt="Screenshot 2026-02-16 at 2 41 27 AM" src="https://github.com/user-attachments/assets/daca67dc-4984-4014-8869-e2a8dbad1a86" />
+<img width="354" height="793" alt="Screenshot 2026-02-16 at 2 42 03 AM" src="https://github.com/user-attachments/assets/70ef76af-1dd5-45b4-87fc-940c680c29ef" />
+<img width="354" height="793" alt="Screenshot 2026-02-16 at 2 41 52 AM" src="https://github.com/user-attachments/assets/1645763a-f6e9-47b4-9f69-1a4ad3e5cbcc" />
+<img width="354" height="793" alt="Screenshot 2026-02-16 at 2 41 44 AM" src="https://github.com/user-attachments/assets/b7528db5-3b4f-4799-b505-2f57a336a39f" />
+<img width="354" height="793" alt="Screenshot 2026-02-16 at 2 42 07 AM" src="https://github.com/user-attachments/assets/c9d088fa-a45c-4d88-94c3-aae3bedfb542" />
+
+
