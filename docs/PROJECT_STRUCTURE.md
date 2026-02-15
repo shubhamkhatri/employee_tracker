@@ -9,7 +9,7 @@ lib/
     theme/
     widgets/
   features/
-    emplyee/
+    employee/
       presentation/
         views/
         widgets/
@@ -28,4 +28,4 @@ lib/
 
 Notes:
 - `core/` contains reusable app-level building blocks.
-- `features/emplyee/` is intentionally scaffolded for incremental TDD commits.
+- `features/employee/` is intentionally scaffolded for incremental TDD commits.

@@ -20,7 +20,7 @@ lib/
     theme/
     widgets/
   features/
-    emplyee/
+    employee/
       presentation/
       application/
       domain/

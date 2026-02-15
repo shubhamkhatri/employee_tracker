@@ -3,10 +3,10 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'core/constants/app_strings.dart';
 import 'core/theme/app_theme.dart';
-import 'features/emplyee/application/bloc/employee_bloc.dart';
-import 'features/emplyee/data/repositories/in_memory_employee_repository.dart';
-import 'features/emplyee/domain/repositories/employee_repository.dart';
-import 'features/emplyee/presentation/views/employees_view.dart';
+import 'features/employee/application/bloc/employee_bloc.dart';
+import 'features/employee/data/repositories/in_memory_employee_repository.dart';
+import 'features/employee/domain/repositories/employee_repository.dart';
+import 'features/employee/presentation/views/employees_view.dart';
 
 class EmployeeApp extends StatelessWidget {
   const EmployeeApp({super.key});
